@@ -54,7 +54,7 @@
             }
             Console.WriteLine($"Максимальный элемент: {max}");*/
             //Задание 4
-            int[] numbers = { 1, 2, 3, 4, 5 };
+            /*int[] numbers = { 1, 2, 3, 4, 5 };
             int et = 0;
             int ot = 0;
             for (int i = 0; i < numbers.Length; i++)
@@ -68,7 +68,18 @@
                     ot++;
                 }
             }
-            Console.WriteLine($"{et} четных и {ot} нечетных");
+            Console.WriteLine($"{et} четных и {ot} нечетных");*/
+            //Задание 5
+            int[] times = [ 120, 95, 110, 105, 100 ];
+            int minTime = times[0];
+            for (int i = 1; i < times.Length; i++)
+            {
+                if (times[i] < minTime)
+                {
+                    minTime = times[i];
+                }
+            }
+            Console.WriteLine($"Самое быстрое время: {minTime} секунд");
         }
     }
 }
