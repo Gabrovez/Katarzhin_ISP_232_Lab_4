@@ -27,8 +27,21 @@
             }
             Console.WriteLine($"Число элементов больше нуля: {res}");*/
             //Задание 1
-            string[] mas = ["sword", "shield", "potion", "sword", "potion", "potion" ];
-               
+            /*Console.WriteLine("Введите элементы массива через пробел: ");
+            string[] mas = Console.ReadLine().Split(' ');
+            Console.WriteLine("Введенный массив:");
+            foreach (string it in mas)
+            {
+                Console.Write(it + " ");
+            }*/
+            //Задание 2
+            int[] scores = { 10, 20, 15, 30, 25 };
+            int res = 0;
+            foreach (int poin in scores)
+            {
+                res += poin;
+            }
+            Console.WriteLine($"Общее количество очков: {res}");
         }
     }
 }
