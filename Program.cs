@@ -43,7 +43,7 @@
             }
             Console.WriteLine($"Общее количество очков: {res}");*/
             //Задание 3
-            int[] nums = { 1, 3, 7, 2, 5 };
+            /*int[] nums = { 1, 3, 7, 2, 5 };
             int max = nums[0];
             for (int i = 1; i < nums.Length; i++)
             {
@@ -52,7 +52,23 @@
                     max = nums[i];
                 }
             }
-            Console.WriteLine($"Максимальный элемент: {max}");
+            Console.WriteLine($"Максимальный элемент: {max}");*/
+            //Задание 4
+            int[] numbers = { 1, 2, 3, 4, 5 };
+            int et = 0;
+            int ot = 0;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    et++;
+                }
+                else
+                {
+                    ot++;
+                }
+            }
+            Console.WriteLine($"{et} четных и {ot} нечетных");
         }
     }
 }
