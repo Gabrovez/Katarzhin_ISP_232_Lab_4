@@ -106,7 +106,7 @@
             double average = (double)sum / points.Length;
             Console.WriteLine($"Среднее количество очков: {average}");*/
             //Задание 8
-            string[] inv = { "Меч", "Ласточка", "Бомба", "Зелье Гром", "Ласточка" };
+            /*string[] inv = { "Меч", "Ласточка", "Бомба", "Зелье Гром", "Ласточка" };
         
             for (int i = 0; i < inv.Length; i++)
             {
@@ -115,7 +115,14 @@
                     inv[i] = "Кошка";
                 }
             }
-            Console.WriteLine("[" + string.Join(", ", inv) + "]");
+            Console.WriteLine("[" + string.Join(", ", inv) + "]");*/
+            //Задание 9
+            string[] companions = ["Garrus", "Tali", "Mordin", "Grunt", "Jack"];
+            string[] roles = ["Лидер команды", "Техник", "Биотик", "Солдат", "Поддержка"];
+            for (int i = 0; i < companions.Length; i++)
+            {
+                Console.WriteLine($"{roles[i]}: {companions[i]}");
+            }
         }
     }
 }
