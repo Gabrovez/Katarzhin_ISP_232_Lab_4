@@ -70,7 +70,7 @@
             }
             Console.WriteLine($"{et} четных и {ot} нечетных");*/
             //Задание 5
-            int[] times = [ 120, 95, 110, 105, 100 ];
+            /*int[] times = [ 120, 95, 110, 105, 100 ];
             int minTime = times[0];
             for (int i = 1; i < times.Length; i++)
             {
@@ -79,7 +79,23 @@
                     minTime = times[i];
                 }
             }
-            Console.WriteLine($"Самое быстрое время: {minTime} секунд");
+            Console.WriteLine($"Самое быстрое время: {minTime} секунд");*/
+            //Задание 6
+            string[] results = { "win", "loss", "win", "win", "loss" };
+            int ws = 0;
+            int ls = 0;
+            for (int i = 0; i < results.Length; i++)
+            {
+                if (results[i] == "win")
+                {
+                    ws++;
+                }
+                else if (results[i] == "loss")
+                {
+                    ls++;
+                }
+            }
+            Console.WriteLine($"{ws} победы и {ls} поражения");
         }
     }
 }
