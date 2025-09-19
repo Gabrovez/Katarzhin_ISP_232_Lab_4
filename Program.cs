@@ -35,13 +35,24 @@
                 Console.Write(it + " ");
             }*/
             //Задание 2
-            int[] scores = { 10, 20, 15, 30, 25 };
+            /*int[] scores = { 10, 20, 15, 30, 25 };
             int res = 0;
             foreach (int poin in scores)
             {
                 res += poin;
             }
-            Console.WriteLine($"Общее количество очков: {res}");
+            Console.WriteLine($"Общее количество очков: {res}");*/
+            //Задание 3
+            int[] nums = { 1, 3, 7, 2, 5 };
+            int max = nums[0];
+            for (int i = 1; i < nums.Length; i++)
+            {
+                if (nums[i] > max)
+                {
+                    max = nums[i];
+                }
+            }
+            Console.WriteLine($"Максимальный элемент: {max}");
         }
     }
 }
