@@ -97,14 +97,25 @@
             }
             Console.WriteLine($"{ws} победы и {ls} поражения");*/
             //Задание 7
-            int[] points = { 15, 20, 25, 30, 10 };
+            /*int[] points = { 15, 20, 25, 30, 10 };
             int sum = 0;
             for (int i = 0; i < points.Length; i++)
             {
                 sum += points[i];
             }
             double average = (double)sum / points.Length;
-            Console.WriteLine($"Среднее количество очков: {average}");
+            Console.WriteLine($"Среднее количество очков: {average}");*/
+            //Задание 8
+            string[] inv = { "Меч", "Ласточка", "Бомба", "Зелье Гром", "Ласточка" };
+        
+            for (int i = 0; i < inv.Length; i++)
+            {
+                if (inv[i] == "Ласточка")
+                {
+                    inv[i] = "Кошка";
+                }
+            }
+            Console.WriteLine("[" + string.Join(", ", inv) + "]");
         }
     }
 }
