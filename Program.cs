@@ -81,7 +81,7 @@
             }
             Console.WriteLine($"Самое быстрое время: {minTime} секунд");*/
             //Задание 6
-            string[] results = { "win", "loss", "win", "win", "loss" };
+            /*string[] results = { "win", "loss", "win", "win", "loss" };
             int ws = 0;
             int ls = 0;
             for (int i = 0; i < results.Length; i++)
@@ -95,7 +95,16 @@
                     ls++;
                 }
             }
-            Console.WriteLine($"{ws} победы и {ls} поражения");
+            Console.WriteLine($"{ws} победы и {ls} поражения");*/
+            //Задание 7
+            int[] points = { 15, 20, 25, 30, 10 };
+            int sum = 0;
+            for (int i = 0; i < points.Length; i++)
+            {
+                sum += points[i];
+            }
+            double average = (double)sum / points.Length;
+            Console.WriteLine($"Среднее количество очков: {average}");
         }
     }
 }
