@@ -117,12 +117,27 @@
             }
             Console.WriteLine("[" + string.Join(", ", inv) + "]");*/
             //Задание 9
-            string[] companions = ["Garrus", "Tali", "Mordin", "Grunt", "Jack"];
+            /*string[] companions = ["Garrus", "Tali", "Mordin", "Grunt", "Jack"];
             string[] roles = ["Лидер команды", "Техник", "Биотик", "Солдат", "Поддержка"];
             for (int i = 0; i < companions.Length; i++)
             {
                 Console.WriteLine($"{roles[i]}: {companions[i]}");
-            }
+            }*/
+            //Шаг 5. Массивы
+            int[] numbs;
+            int[] nums = new int[4];
+            int[] nums2 = new int[4] { 1, 2, 3, 5 };
+            int[] nums3 = new int[] { 1, 2, 3, 5 };
+            int[] nums4 = new[] { 1, 2, 3, 5 };
+            int[] nums5 = { 1, 2, 3, 5 };
+            int[] nums6 = [1, 2, 3, 5];
+            Console.WriteLine(nums6[3]);
+            var n = nums6[1];
+            Console.WriteLine(n);
+            nums6[1] = 505;
+            Console.WriteLine(nums6[1]);
+            Console.WriteLine(nums6[6]);
+
         }
     }
 }
