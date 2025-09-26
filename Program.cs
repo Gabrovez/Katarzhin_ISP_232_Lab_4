@@ -124,20 +124,20 @@
                 Console.WriteLine($"{roles[i]}: {companions[i]}");
             }*/
             //Шаг 5. Массивы
-            int[] numbs;
-            int[] nums = new int[4];
-            int[] nums2 = new int[4] { 1, 2, 3, 5 };
-            int[] nums3 = new int[] { 1, 2, 3, 5 };
-            int[] nums4 = new[] { 1, 2, 3, 5 };
-            int[] nums5 = { 1, 2, 3, 5 };
-            int[] nums6 = [1, 2, 3, 5];
-            Console.WriteLine(nums6[3]);
-            var n = nums6[1];
-            Console.WriteLine(n);
-            nums6[1] = 505;
-            Console.WriteLine(nums6[1]);
-            Console.WriteLine(nums6[6]);
-
+            //int[] numbs;
+            //int[] nums = new int[4];
+            //int[] nums2 = new int[4] { 1, 2, 3, 5 };
+            //int[] nums3 = new int[] { 1, 2, 3, 5 };
+            //int[] nums4 = new[] { 1, 2, 3, 5 };
+            //int[] nums5 = { 1, 2, 3, 5 };
+            int[] nums = [1, 2, 3, 5];
+            Console.WriteLine(nums.Length);
+            Console.WriteLine(nums[nums.Length - 1]);
+            Console.WriteLine(nums[nums.Length - 2]);
+            Console.WriteLine(nums[nums.Length - 3]);
+            Console.WriteLine(nums[^1]);
+            Console.WriteLine(nums[^2]);
+            Console.WriteLine(nums[^3]);
         }
     }
 }
