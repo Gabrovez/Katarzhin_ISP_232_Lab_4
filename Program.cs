@@ -131,9 +131,10 @@
             //int[] nums4 = new[] { 1, 2, 3, 5 };
             //int[] nums5 = { 1, 2, 3, 5 };
             int[] nums = [1, 2, 3, 5];
-            foreach (int i in nums)
+            for (int i = 0; i < nums.Length; i ++)
             {
-                Console.WriteLine(i);
+                nums[i] = nums[i] * 2;
+                Console.WriteLine(nums[i]);
             }
         }
     }
