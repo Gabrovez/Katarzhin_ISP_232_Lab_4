@@ -131,10 +131,11 @@
             //int[] nums4 = new[] { 1, 2, 3, 5 };
             //int[] nums5 = { 1, 2, 3, 5 };
             int[] nums = [1, 2, 3, 5];
-            for (int i = 0; i < nums.Length; i ++)
+            int i = 0;
+            while (i < nums.Length)
             {
-                nums[i] = nums[i] * 2;
                 Console.WriteLine(nums[i]);
+                i++;
             }
         }
     }
