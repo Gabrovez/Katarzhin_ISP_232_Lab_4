@@ -146,14 +146,28 @@
             //Console.WriteLine(student[4].GetType());
             //Console.WriteLine(student2[4].GetType());
             // Шаг 6. Задачи с массивами
-            int[] numbs = [-1, -2, -3, 4, 5, -6, 0, 43, 56, -34, 12, 45, -102, 76, -45, 96, -4, -3, 5, 76, -6, -8, 2, 0, 5, -9];
+            /*int[] numbs = [-1, -2, -3, 4, 5, -6, 0, 43, 56, -34, 12, 45, -102, 76, -45, 96, -4, -3, 5, 76, -6, -8, 2, 0, 5, -9];
             int res = 0;
             foreach (int number in numbs)
             {
                 if (number > 0)
                     res++;
             }
-            Console.WriteLine($"Число элементов больше нуля: {res}");
+            Console.WriteLine($"Число элементов больше нуля: {res}");*/
+            int[] numbers = [-1, -2, -3, 4, 5, -6, 0, 43, 56, -34, 12, 45, -102, 76, -45, 96, -4, -3, 5, 76, -6, -8, 2, 0, 5, -9];
+            int n = numbers.Length;
+            int k = n / 2; 
+            int temp;
+            for (int i = 0; i < k; i++)
+            {
+                temp = numbers[i];
+                numbers[i] = numbers[n - 1 - i];
+                numbers[n - 1 - i] = temp;
+            }
+            foreach (int i in numbers)
+            {
+                Console.Write($"{i} \t");
+            }
 
         }
     }
