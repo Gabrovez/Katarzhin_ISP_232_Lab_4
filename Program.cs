@@ -187,9 +187,9 @@
             {
                 Console.WriteLine(nums[i]);
             }*/
-            List<string> student = ["Иван", "Игорь", "Аллександр"];
-            var yourStudent = new List<string>(student);
-
+            /*List<string> student = ["Иван", "Игорь", "Аллександр"];
+            var yourStudent = new List<string>(student);*/
+            List<string> student = new(10);
         }
     }
 }
