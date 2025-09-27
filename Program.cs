@@ -130,13 +130,21 @@
             //int[] nums3 = new int[] { 1, 2, 3, 5 };
             //int[] nums4 = new[] { 1, 2, 3, 5 };
             //int[] nums5 = { 1, 2, 3, 5 };
-            int[] nums = [1, 2, 3, 5];
-            int i = 0;
-            while (i < nums.Length)
-            {
-                Console.WriteLine(nums[i]);
-                i++;
-            }
+            //int[] nums = [1, 2, 3, 5];
+            //int i = 0;
+            //while (i < nums.Length)
+            //{
+            //    Console.WriteLine(nums[i]);
+            //    i++;
+            //}
+            int[] nums1 = [0, 1, 2, 3, 4, 5];
+            int[,] nums2 = { { 0, 1, 2 }, { 3, 4, 5 } };
+            object[] student = new object[] { "Иван", "Игорь", 4, 4.6, 'с' };
+            student[4] = 4;
+            dynamic[] student2 = new dynamic[] { "Иван", "Игорь", 4, 4.6, 'с' };
+            student2[4] = 4;
+            Console.WriteLine(student[4].GetType());
+            Console.WriteLine(student2[4].GetType());
         }
     }
 }
