@@ -137,14 +137,24 @@
             //    Console.WriteLine(nums[i]);
             //    i++;
             //}
-            int[] nums1 = [0, 1, 2, 3, 4, 5];
-            int[,] nums2 = { { 0, 1, 2 }, { 3, 4, 5 } };
-            object[] student = new object[] { "Иван", "Игорь", 4, 4.6, 'с' };
-            student[4] = 4;
-            dynamic[] student2 = new dynamic[] { "Иван", "Игорь", 4, 4.6, 'с' };
-            student2[4] = 4;
-            Console.WriteLine(student[4].GetType());
-            Console.WriteLine(student2[4].GetType());
+            //int[] nums1 = [0, 1, 2, 3, 4, 5];
+            //int[,] nums2 = { { 0, 1, 2 }, { 3, 4, 5 } };
+            //object[] student = new object[] { "Иван", "Игорь", 4, 4.6, 'с' };
+            //student[4] = 4;
+            //dynamic[] student2 = new dynamic[] { "Иван", "Игорь", 4, 4.6, 'с' };
+            //student2[4] = 4;
+            //Console.WriteLine(student[4].GetType());
+            //Console.WriteLine(student2[4].GetType());
+            // Шаг 6. Задачи с массивами
+            int[] numbs = [-1, -2, -3, 4, 5, -6, 0, 43, 56, -34, 12, 45, -102, 76, -45, 96, -4, -3, 5, 76, -6, -8, 2, 0, 5, -9];
+            int res = 0;
+            foreach (int number in numbs)
+            {
+                if (number > 0)
+                    res++;
+            }
+            Console.WriteLine($"Число элементов больше нуля: {res}");
+
         }
     }
 }
