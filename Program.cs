@@ -190,12 +190,33 @@
             /*List<string> student = ["Иван", "Игорь", "Аллександр"];
             var yourStudent = new List<string>(student);*/
             /* List<string> student = new(10);*/
-            List<string> student = ["Билли", "Петр", "Степан"];
+            /*List<string> student = ["Билли", "Петр", "Степан"];
             string firstStudent = student[0];
             Console.WriteLine(firstStudent);
             student[0] = "Богдан";
             Console.WriteLine(student[0]);
-            Console.WriteLine(student.Count);
+            Console.WriteLine(student.Count);*/
+            // Перебор списка
+            List<string> student = ["Билли", "Игорь", "Степан"];
+            foreach (var person in student)
+            {
+                Console.WriteLine(person);
+            }
+            List<string> student2 = ["Билли", "Игорь", "Степан"];
+            student2.Add("Van"); 
+            student2.AddRange(["Антон", "Денис"]);
+            student2.Insert(1, "Кирилл"); 
+            student2.InsertRange(1, ["Mike", "Kate"]); 
+            student2.Insert(7, "Михаил"); 
+            foreach (var person in student2)
+            {
+                Console.WriteLine(person);
+            }
+            var people = new List<string>() { "Eugene", "Mike", "Kate", "Tom", "Bob", "Sam", "Tom", "Alice" };
+            people.RemoveAt(1);  
+            people.Remove("Tom"); 
+            people.RemoveRange(1, 2);
+            people.Clear();
         }
     }
 }
