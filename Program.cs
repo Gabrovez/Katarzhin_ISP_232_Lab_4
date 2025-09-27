@@ -154,19 +154,38 @@
                     res++;
             }
             Console.WriteLine($"Число элементов больше нуля: {res}");*/
-            int[] numbers = [-1, -2, -3, 4, 5, -6, 0, 43, 56, -34, 12, 45, -102, 76, -45, 96, -4, -3, 5, 76, -6, -8, 2, 0, 5, -9];
-            int n = numbers.Length;
-            int k = n / 2; 
+            //int[] numbers = [-1, -2, -3, 4, 5, -6, 0, 43, 56, -34, 12, 45, -102, 76, -45, 96, -4, -3, 5, 76, -6, -8, 2, 0, 5, -9];
+            //int n = numbers.Length;
+            //int k = n / 2; 
+            //int temp;
+            //for (int i = 0; i < k; i++)
+            //{
+            //    temp = numbers[i];
+            //    numbers[i] = numbers[n - 1 - i];
+            //    numbers[n - 1 - i] = temp;
+            //}
+            //foreach (int i in numbers)
+            //{
+            //    Console.Write($"{i} \t");
+            //}
+            int[] nums = [54, 7, -41, 2, 4, 2, 89, 33, -5, 12];
             int temp;
-            for (int i = 0; i < k; i++)
+            for (int i = 0; i < nums.Length - 1; i++)
             {
-                temp = numbers[i];
-                numbers[i] = numbers[n - 1 - i];
-                numbers[n - 1 - i] = temp;
+                for (int j = i + 1; j < nums.Length; j++)
+                {
+                    if (nums[i] > nums[j])
+                    {
+                        temp = nums[i];
+                        nums[i] = nums[j];
+                        nums[j] = temp;
+                    }
+                }
             }
-            foreach (int i in numbers)
+            Console.WriteLine("Вывод отсортированного массива ");
+            for (int i = 0; i < nums.Length; i++)
             {
-                Console.Write($"{i} \t");
+                Console.WriteLine(nums[i]);
             }
 
         }
