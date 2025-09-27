@@ -168,7 +168,7 @@
             //{
             //    Console.Write($"{i} \t");
             //}
-            int[] nums = [54, 7, -41, 2, 4, 2, 89, 33, -5, 12];
+            /*int[] nums = [54, 7, -41, 2, 4, 2, 89, 33, -5, 12];
             int temp;
             for (int i = 0; i < nums.Length - 1; i++)
             {
@@ -186,7 +186,9 @@
             for (int i = 0; i < nums.Length; i++)
             {
                 Console.WriteLine(nums[i]);
-            }
+            }*/
+            List<string> student = ["Иван", "Игорь", "Аллександр"];
+            var yourStudent = new List<string>(student);
 
         }
     }
