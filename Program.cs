@@ -189,7 +189,13 @@
             }*/
             /*List<string> student = ["Иван", "Игорь", "Аллександр"];
             var yourStudent = new List<string>(student);*/
-            List<string> student = new(10);
+            /* List<string> student = new(10);*/
+            List<string> student = ["Билли", "Петр", "Степан"];
+            string firstStudent = student[0];
+            Console.WriteLine(firstStudent);
+            student[0] = "Богдан";
+            Console.WriteLine(student[0]);
+            Console.WriteLine(student.Count);
         }
     }
 }
